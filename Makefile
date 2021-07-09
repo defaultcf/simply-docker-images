@@ -1,4 +1,4 @@
-DATE=${shell date +%Y%m%d}
+REPOSITORY=ghcr.io/defaultcf/simply-docker-images
 
 build:
-	docker build -t defaultcf/${NAME}:${VERSION}-${DATE} ${NAME}/${VERSION}
+	docker build -t ${REPOSITORY}/${NAME}:${VERSION} ${NAME}/${VERSION}
